@@ -4,7 +4,7 @@ test.only('Dropdowns', async ({ page }) => {
     await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
     //await page.locator('option[value="option2"]').click(); //not like radio or check boxes,focus select tag
     //under select tag that portion has to be selected
-    await page.locator('#dropdown-class-example').selectOption("Option1");
+    await page.locator('#dropdown-class-example').selectOption("Option1"); //label means visible text
     await page.locator('#dropdown-class-example').selectOption({ label: 'Option2' });
     await page.locator('#dropdown-class-example').selectOption('option3'); //by value
     await page.locator('#dropdown-class-example').selectOption({ value: "option1" });
